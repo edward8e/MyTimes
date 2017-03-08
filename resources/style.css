@@ -1,0 +1,65 @@
+/*This is everything that has to do with the Header*/
+header{
+  display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+  border-bottom: 1px solid black;
+  height: 80px;
+  position: fixed;
+  justify-content: space-between;
+}
+header p{
+  color: MediumAquamarine;
+}
+
+/*This is everything that has to do with the logo*/
+.logo{
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+.logo img{
+  margin-right: 12px;
+}
+
+/*This is the navigation*/
+nav{
+  display: inline-block;
+  align-items: center;
+  padding-right: 40px;
+}
+nav span{
+    padding: 20px 10px;
+}
+
+/*This is the body structure*/
+main{
+  display: flex;
+  padding-top: 116px;
+  margin: 0 auto 78px auto;
+  background-image: url("./resources/img-story-main.png");
+}
+.column.large .top{
+  background-image: url("resources/img-story-main.png");
+}
+.column div{
+  border: 1px solid black;
+}
+
+.column.large {
+  width: 630px;
+  margin-right: 32px;
+}
+
+.column.medium {
+  width: 300px;
+  margin-right: 32px;
+}
+
+.column.small {
+  width: 240px;
+  margin-right: 32px;
+}
