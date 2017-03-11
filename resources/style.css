@@ -30,7 +30,7 @@ header p{
 }
 
 /*This is the navigation*/
-nav{
+header nav{
   display: inline-block;
   align-items: center;
   padding-right: 40px;
@@ -38,16 +38,17 @@ nav{
 nav span{
     padding: 20px 10px;
 }
+nav a{
+  color: black;
+}
 
 /*This is the body structure*/
 main{
   display: flex;
   padding-top: 116px;
   margin: 0 auto 78px auto;
-  width: 1232px;
-}
-.column div{
-  border: 1px solid black;
+  justify-content: center;
+  /*width: 1232px;*/
 }
 .text-content{
   font-family: Georgia;
@@ -60,11 +61,28 @@ main{
   font-size: 30px;
   color: white;
   height: 300px;
+  text-align: center;
+  display: flex;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
 }
 
 .column.large {
   width: 630px;
-  margin-right: 32px;
+}
+.story-body{
+  display: flex;
+  justify-content: space-between;
+}
+.story1, .story2{
+  width: 300px;
+}
+.large .story-body .text-content{
+  height: 250px;
+  width: 300px;
 }
 .column.large .top{
   background-image: url("img-story-main.png");
@@ -78,21 +96,77 @@ main{
 .column.large .story1 .image-content{
   background-image: url("img-story-2.png");
   display: flex;
+
 }
 .column.large .story2 .image-content{
   background-image: url("img-story-3.png");
   display: flex;
 }
+
+
 .column.medium {
   width: 300px;
-  margin-right: 32px;
 }
 .column.medium .story3 .image-content{
   background-image: url("img-story-1.png");
   display: flex;
 }
 
+
 .column.small {
   width: 240px;
   margin-right: 32px;
+}
+.column.small h3{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.column.small .text-content span{
+  display: flex;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid black;
+  padding: 11px 20px;
+}
+
+/*This is the Section for the Footer*/
+
+footer{
+  background-color: MediumAquamarine;
+margin: auto;
+font-family: Verdana;
+font-size: 12px;
+height: 325px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+footer .title{
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-right: 25px;
+  border-right: 2px solid white;
+}
+footer .info{
+  display: flex;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
+}
+footer .info nav{
+  display: inline-block;
+  padding-left: 25px;
+}
+
+footer .copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
